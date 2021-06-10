@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+
+<body>
+
+    <nav>
+        <label class="logo"></label>
+        <ul>
+            <a href="home.html">
+                <li>Home</li>
+            </a>
+            <a href="sobre.html">
+                <li>Sobre</li>
+            </a>
+            <a href="contato.html">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="formularioContato">
+        <!-- Formulário de nome e mensagens -->
+        <section>
+            <h2>Formulário para contato:</h2>
+            <form action="">
+                <div class="nomeContato">
+
+                    <label for="">Nome: </label><input id="name" name="usuario_nome" type="text" />
+
+                </div>
+
+                <div class="assuntoContato">
+
+                    <label for="">Assunto: </label><input id="assunto" name="usuario_assunto" type="text" />
+
+                </div>
+
+                <div class="mensagemContato">
+
+                    <label for="">Mensagem: </label> <textarea id="msg" name="usuario_msg" cols="30"
+                        rows="10"></textarea>
+                    <!--<input id="msg" type="text" />-->
+                </div>
+            </form>
+
+        </section>
+
+        <section>
+            <div class="buttonCont">
+                <button id="botaoEnviarCont">Enviar</button>
+            </div>
+        </section>
+
+    </div>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="links">
+        <h2>Contatos:</h2>
+        <li>Email Luiz Guilherme: <a href="mailto:guilher.queiroz@gmail.com">Entre em contato</a></li>
+        <li>Email Rone Pereira: <a href="mailto:ronefilho28@hotmail.com">Entre em contato</a></li>
+        <li>Telefone: <a href="tel:+55859999999999">+55 (85)99999-9999</a></li>
+    </div>
+
+</body>
+
+<footer>
+
+    <div class="creditos">
+        <center><button id="botao">Créditos</button></center>
+    </div>
+
+    <script>
+        var creditosRodape = document.getElementById("botao")
+        creditosRodape.onclick = function () {
+            alert("Turma: Desenvolvimento WEB\nLuiz Guilherme - 427790\nRone Pereira - 421613")
+        }
+    </script>
+
+</footer>
+
+</html>

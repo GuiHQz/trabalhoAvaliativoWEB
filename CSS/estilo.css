@@ -1,0 +1,264 @@
+/*Home*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #6424c9;
+}
+
+nav{
+    background: #501da2;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float: left;
+    margin-right: 20px;
+    padding: 0 70px;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 80px;
+    margin: 0 30px;
+    font-weight: bold;
+    color: rgb(131, 131, 131)
+}
+
+nav ul li:hover{
+    color: #c6b6e3;
+}
+
+.cabecalho{
+    font-family: 'Nova Mono', monospace;
+    color: white;
+    font-weight: bold; 
+    padding: 0 100px;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+#name, #msg, #assunto{
+    border-color: #c6b6e3;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #c6b6e3;
+    outline: 0;
+    color: #fff
+}
+
+textarea{
+    vertical-align: top;
+    height: 2em;
+    resize: vertical;
+}
+
+p{
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 30px;
+    padding: 0 100px;
+    margin-top: 25px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.formulario{
+    padding: 0 100px;
+    margin-top: 25px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+
+}
+
+.nome, .mensagem{
+    font-size: 25px;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+.formulario p{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#botaoEnviar{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.5px solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    background: transparent;
+    width: 120px;
+    height: 45px;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 15px;
+    cursor:pointer;
+}
+
+#botaoEnviar:hover{
+    background-color: #c6b6e3;
+    color: #501da2;
+    font-weight: bold;
+    
+}
+
+.container{
+    display: flex;
+    
+}
+
+.img{
+    padding: 20px;
+}
+
+footer{
+    background: black;
+    
+}
+
+footer #botao{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.5px solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    background: transparent;
+    width: 120px;
+    height: 45px;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 15px;
+    cursor:pointer
+}
+
+footer #botao:hover{
+    background: white;
+    color: black;
+}
+
+.Container2{
+   background: white;
+   padding-bottom: 40px;
+}
+
+.btn{
+    display: inline-block;
+    border: 0.5px solid #501da2;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 700;
+    color: #501da2;
+    text-align: center;
+    transition: all 0.2s;
+    background: transparent;
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 15px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background-color: #c6b6e3;
+    color: #501da2;
+    font-weight: bold;
+}
+
+.divCustom{
+    padding-top: 20px;
+    padding-left: 100px;
+    text-align: justify;
+}
+
+/*Home*/
+
+/*Contato*/
+    .links{
+        color: #fff;
+        padding: 0 100px;
+        padding-bottom: 253px;
+        padding-top: 50px;
+    }
+
+    .links a{
+        color: gold;
+    }
+    .formularioContato{
+    padding: 0 100px;
+    margin-top: 25px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    padding-bottom: 50px;
+    }
+
+    .nomeContato, .assuntoContato, .mensagemContato{
+        font-size: 25px;
+        padding-right: 50px;
+        font-weight: bold;
+    }
+
+    #botaoEnviarCont{
+    
+        border: 0.5px solid #FFFFFF;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #FFFFFF;
+        background: transparent;
+        width: 120px;
+        height: 45px;
+        font-size: 20px;
+        font-family: 'Rajdhani', sans-serif;
+        cursor:pointer;
+    }
+
+    .buttonCont{
+        padding-top: 45px;
+    }
+
+/*Contato*/
+
+/*Sobre*/
+    .resumo{
+    display: flex;
+    margin: 10%;
+    font-family: 'Nova Mono', monospace;
+    }
+
+    .resumo p{
+        font-size: 25px;
+        font-family: 'Nova Mono', monospace;
+    }
+
+    .resumo h2{
+        color: #FFF;
+    }
+
+    .integranteUm p, .integranteDois p{
+        text-align: justify;
+    }
+/*Sobre*/

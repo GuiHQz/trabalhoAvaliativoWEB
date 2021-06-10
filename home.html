@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Galada&family=Nova+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <nav>
+        <!-- Nav do site -->
+        <label class="nav"></label>
+        <ul>
+            <a href="home.html">
+                <li>Home</li>
+            </a>
+            <a href="sobre.html">
+                <li>Sobre</li>
+            </a>
+            <a href="contato.html">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        
+        <section>
+            <div class="cabecalho">
+
+                <div class="logo">
+                    <img src="/IMG/logoOrg.png" alt="">
+                </div>
+
+                <!-- Texto de boas-vindas-->
+                <h1>Bem vindo ao site</h1>
+            </div>
+
+            <p>Olá, diga quem é você e também compartilhe suas mensagens conosco.</p>
+
+            <div class="formulario">
+                <!-- Formulário de nome e mensagens -->
+                <section>
+                    <form action="">
+                        <div class="nome">
+
+                            <label for="">Nome: </label><input id="name" name="usuario_nome" required type="text"
+                                required />
+
+                        </div>
+                        <div class="mensagem">
+
+                            <label for="">Mensagem: </label> <textarea id="msg" name="usuario_msg" cols="30"
+                                rows="10"></textarea>
+                            <!--<input id="msg" type="text" />-->
+                        </div>
+                    </form>
+
+
+
+                </section>
+
+                <section>
+                    <div class="button">
+                        <button id="botaoEnviar">Enviar</button>
+                    </div>
+                </section>
+
+
+        </section>
+
+        <section>
+            <div class="img">
+                <img src="IMG/imagemHome.png" height="559" width="559">
+            </div>
+        </section>
+
+    </div>
+
+    <div class="Container2">
+
+        <div id="listaMensagens">
+
+        </div>
+
+    </div>
+
+    <script>
+        var botaoMensagem = document.getElementById("botaoEnviar")
+        var cont = 1
+
+        excluir = function (cont) {
+            document.getElementById('msg' + cont).outerHTML = ''
+        }
+
+        botaoMensagem.onclick = function () {
+            var nameMensagem = document.getElementById("name").value
+            var msgMensagem = document.getElementById("msg").value
+            var text = nameMensagem + ': ' + msgMensagem
+            var div = document.createElement("div")
+            var t = document.createTextNode(text)
+            var botao_excluir = document.createElement("button")
+
+            if (nameMensagem == '' || msgMensagem == '') {
+                alert("[ATENÇÃO]: Preencha todos os campos corretamente")
+            }
+            else {
+                div.setAttribute('class', 'divCustom')
+                div.setAttribute('id', 'msg' + cont)
+                botao_excluir.appendChild(document.createTextNode("Excluir"))
+                botao_excluir.setAttribute('onclick', 'excluir(' + cont + ')')
+                botao_excluir.setAttribute('class', 'btn')
+                div.appendChild(t)
+                document.getElementById("listaMensagens").appendChild(div).appendChild(botao_excluir)
+
+                cont++
+            }
+        }
+    </script>
+
+    <div id="listaMensagens">
+
+    </div>
+
+</body>
+
+<footer>
+
+    <div class="creditos">
+        <center><button id="botao">Créditos</button></center>
+    </div>
+
+    <script>
+        var creditosRodape = document.getElementById("botao")
+        creditosRodape.onclick = function () {
+            alert("Turma: Desenvolvimento WEB\nLuiz Guilherme - 427790\nRone Pereira - 421613")
+        }
+    </script>
+
+</footer>
+
+</html>
